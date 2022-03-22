@@ -1,23 +1,26 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Code } from "phosphor-react";
+import { Wrench } from "phosphor-react";
 
 function App(): React.ReactElement {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <Code color="#2EC4B6" weight="light" size={512} />
-        <p>This page is currently under construction</p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        <div className="flex">
+          <span className="flex flex-col md:flex-row align-middle items-center gap-6">
+            <span className="">
+              <Wrench color="#2EC4B6" weight="duotone" size={192} />
+            </span>
+            <div className="flex flex-col gap-3">
+              <h1 className="px-4 text-4xl text-center md:text-left">
+                This page is currently under construction
+              </h1>
+              <p className="px-4 text-xl font-light text-center md:text-left">
+                Come back later to see what's in store
+              </p>
+            </div>
+          </span>
+        </div>
       </header>
     </div>
   );
