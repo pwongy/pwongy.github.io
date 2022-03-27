@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import Home from "./components/Home";
 import Principles from "./components/Principles";
+import Photos from "./components/Photos";
 import Journey from "./components/Journey";
 import Quotes from "./components/Quotes";
 import PageNotFound from "./components/PageNotFound";
@@ -21,6 +22,7 @@ render(
           <Route index element={<Home />} />
           <Route path="welcome" element={<Home />} />
           <Route path="principles" element={<Principles />} />
+          <Route path="photos" element={<Photos />} />
           <Route path="journey" element={<Journey />} />
           <Route path="quotes" element={<Quotes />} />
           <Route path="*" element={<PageNotFound />} />

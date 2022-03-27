@@ -34,9 +34,9 @@ export default function PhotosLayout(): React.ReactElement {
         {colourColumns.map((column) => (
           <div key={column.colour} className={`col-span-1 w-40`}>
             {/* Header */}
-            <div className="flex justify-center items-center text-base align-middle gap-x-2">
-              <div className={`w-5 h-5 mb-2 ${column.class}`}></div>
-              <div className="mb-4">{column.colour.toUpperCase()}</div>
+            <div className="flex mb-6 justify-center items-center text-base align-middle gap-x-2">
+              <span className={`w-5 h-5 mb-2 ${column.class}`}></span>
+              <span className="">{column.colour.toUpperCase()}</span>
             </div>
 
             {/* Photo column */}
@@ -45,9 +45,9 @@ export default function PhotosLayout(): React.ReactElement {
                 <div key={item.filename} className="flex flex-col mb-4">
                   {/* Photo thumbnail */}
                   <div
-                    className={`h-40 rounded-md text-lg ${column.class} ${
-                      column.colour === "white" ? "text-black" : ""
-                    }`}
+                    className={`h-40 rounded-md text-lg text-center pt-2 ${
+                      column.class
+                    } ${column.colour === "white" ? "text-black" : ""}`}
                   >
                     {item.title}
                   </div>
