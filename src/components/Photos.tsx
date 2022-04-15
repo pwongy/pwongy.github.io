@@ -4,7 +4,7 @@ import PhotosLayout from "./photosLayout/PhotosLayout";
 
 export default function Principles(): React.ReactElement {
   const layout = (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-full">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-center align-middle items-center gap-6 my-20">
         <span className="">

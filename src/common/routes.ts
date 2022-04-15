@@ -4,7 +4,7 @@ import Principles from "../components/Principles";
 import Journey from "../components/Journey";
 import Quotes from "../components/Quotes";
 
-export const HOME = "/welcome";
+export const HOME = "/";
 export const PHOTOS = "/photos";
 export const PRINCIPLES = "/principles";
 export const MY_JOURNEY = "/journey";
@@ -19,11 +19,6 @@ export const mainNavRoutes = [
     component: Home,
   },
   {
-    path: PHOTOS,
-    label: "Photos",
-    component: Photos,
-  },
-  {
     path: PRINCIPLES,
     label: "Principles",
     component: Principles,
@@ -32,6 +27,11 @@ export const mainNavRoutes = [
     path: MY_JOURNEY,
     label: "Journey",
     component: Journey,
+  },
+  {
+    path: PHOTOS,
+    label: "Photos",
+    component: Photos,
   },
   {
     path: QUOTES,

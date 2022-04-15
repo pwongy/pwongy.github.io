@@ -8,7 +8,7 @@ import {
 
 export default function Quotes(): React.ReactElement {
   const layout = (
-    <div className="flex h-full justify-center align-middle">
+    <div className="flex min-h-full justify-center align-middle">
       <span className="flex flex-col md:flex-row justify-center align-middle items-center gap-6">
         <span className="">
           <ChatsCircle color="#2EC4B6" weight="duotone" size={160} />
