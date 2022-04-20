@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.73abb8b8.css",
-    "main.js": "/static/js/main.b3f585fc.js",
-    "static/media/paul_profile_2022_square.jpg": "/static/media/paul_profile_2022_square.2d81b9bc760fc3907e50.jpg",
+    "main.css": "/static/css/main.654e6de6.css",
+    "main.js": "/static/js/main.dd4b1a19.js",
     "static/media/gray__cupid.jpg": "/static/media/gray__cupid.243365deceaf63fdbc5c.jpg",
     "static/media/gray__action.jpg": "/static/media/gray__action.28d092042b51f7a518aa.jpg",
     "static/media/green__aisle.jpg": "/static/media/green__aisle.892507fac8f6861da31d.jpg",
@@ -64,8 +63,11 @@
     "static/media/white__snap.jpg": "/static/media/white__snap.5bfdd3101fec8b47c4a6.jpg",
     "static/media/gray__cityscape.jpg": "/static/media/gray__cityscape.57079f83c36dc302251b.jpg",
     "static/media/yellow__sunset.jpg": "/static/media/yellow__sunset.0f5ee977e136b9919d0f.jpg",
+    "static/media/paul_v7.jpg": "/static/media/paul_v7.389eaff64d8d2908b9f3.jpg",
     "static/media/red__blossoms.jpg": "/static/media/red__blossoms.b6e51a0c971cd1e8e679.jpg",
+    "static/media/paul_v6.jpg": "/static/media/paul_v6.fa31363508829a99e846.jpg",
     "static/media/gray__gull.jpg": "/static/media/gray__gull.277333cf97da430876ad.jpg",
+    "static/media/paul_v5.jpg": "/static/media/paul_v5.f39d3d989ab4aa998f59.jpg",
     "static/media/black__fluorescence.jpg": "/static/media/black__fluorescence.3130b862996e64e699df.jpg",
     "static/media/orange__spikes.jpg": "/static/media/orange__spikes.3575afe330f86a8454fe.jpg",
     "static/media/red__message.jpg": "/static/media/red__message.5cecc845cb43c4af4cbe.jpg",
@@ -74,15 +76,19 @@
     "static/media/blue__hover.jpg": "/static/media/blue__hover.ca717049864b0d8b973d.jpg",
     "static/media/white__exposed.jpg": "/static/media/white__exposed.b1d9d0b2b41489f27a31.jpg",
     "static/media/black__glowsticks.jpg": "/static/media/black__glowsticks.67a543311b1e9e833131.jpg",
+    "static/media/paul_v1.jpg": "/static/media/paul_v1.3c0cc81e8391665f822e.jpg",
     "static/media/white__mirror.jpg": "/static/media/white__mirror.0f20208bb5bbdd1c3936.jpg",
+    "static/media/paul_v2.jpg": "/static/media/paul_v2.f8869370ffd163b56a07.jpg",
     "static/media/black__skylight.jpg": "/static/media/black__skylight.1b7505c711f585a6c5c3.jpg",
+    "static/media/paul_v3.jpg": "/static/media/paul_v3.59a41562daccefaf6e69.jpg",
+    "static/media/paul_v4.jpg": "/static/media/paul_v4.aa600daad96bd0879c48.jpg",
     "static/media/black__eclipse.jpg": "/static/media/black__eclipse.a9996d9943311c2de64d.jpg",
     "index.html": "/index.html",
-    "main.73abb8b8.css.map": "/static/css/main.73abb8b8.css.map",
-    "main.b3f585fc.js.map": "/static/js/main.b3f585fc.js.map"
+    "main.654e6de6.css.map": "/static/css/main.654e6de6.css.map",
+    "main.dd4b1a19.js.map": "/static/js/main.dd4b1a19.js.map"
   },
   "entrypoints": [
-    "static/css/main.73abb8b8.css",
-    "static/js/main.b3f585fc.js"
+    "static/css/main.654e6de6.css",
+    "static/js/main.dd4b1a19.js"
   ]
 }
