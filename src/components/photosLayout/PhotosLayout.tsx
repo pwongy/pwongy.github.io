@@ -9,33 +9,50 @@ export default function PhotosLayout(): React.ReactElement {
 
   // Define colours
   const colourColumns = [
-    { colour: "red", bgClass: "bg-red-500", borderClass: "border-red-500" },
+    {
+      colour: "red",
+      bgClass: "bg-gradient-to-br from-red-800 via-red-500 to-red-300",
+      borderClass: "border-red-500",
+    },
     {
       colour: "orange",
-      bgClass: "bg-orange-500",
+      bgClass: "bg-gradient-to-br from-orange-700 via-orange-500 to-amber-300",
       borderClass: "border-orange-500",
     },
     {
       colour: "yellow",
-      bgClass: "bg-yellow-500",
+      bgClass: "bg-gradient-to-br from-yellow-600 via-yellow-400 to-yellow-200",
       borderClass: "border-yellow-500",
     },
     {
       colour: "green",
-      bgClass: "bg-green-500",
+      bgClass: "bg-gradient-to-br from-green-800 via-emerald-500 to-green-300",
       borderClass: "border-green-500",
     },
-    { colour: "blue", bgClass: "bg-blue-500", borderClass: "border-blue-500" },
+    {
+      colour: "blue",
+      bgClass: "bg-gradient-to-br from-blue-800 via-cyan-600 to-sky-300",
+      borderClass: "border-blue-500",
+    },
     {
       colour: "purple",
-      bgClass: "bg-purple-500",
+      bgClass: "bg-gradient-to-br from-indigo-800 via-purple-500 to-purple-300",
       borderClass: "border-purple-500",
     },
-    { colour: "black", bgClass: "bg-black", borderClass: "border-black" },
-    { colour: "gray", bgClass: "bg-gray-500", borderClass: "border-gray-500" },
+    {
+      colour: "black",
+      bgClass: "bg-gradient-to-br from-black via-gray-800 to-gray-500",
+      borderClass: "border-black",
+    },
+    {
+      colour: "gray",
+      bgClass: "bg-gradient-to-br from-gray-600 via-gray-400 to-gray-200",
+      borderClass: "border-gray-500",
+    },
     {
       colour: "white",
-      bgClass: "bg-white border border-gray-300",
+      bgClass:
+        "bg-gradient-to-br from-gray-200 via-gray-100 to-white border-gray-200",
       borderClass: "border-gray-500",
     },
   ];
@@ -199,10 +216,7 @@ export default function PhotosLayout(): React.ReactElement {
       ))} */}
 
       {modalOpen && (
-        <Modal
-          width="w-full lg:w-fit lg:max-w-7xl"
-          onClose={() => setModalOpen(false)}
-        >
+        <Modal width="w-fit lg:max-w-7xl" onClose={() => setModalOpen(false)}>
           <>
             <div
               className="flex flex-col space-y-4 bg-white p-3 md:w-full overflow-y-auto align-middle"
@@ -215,21 +229,21 @@ export default function PhotosLayout(): React.ReactElement {
                 >
                   <CaretLeft
                     // size={60}
-                    className="hover:bg-gray-100 p-1 rounded-full w-8 h-8"
+                    className="hover:bg-gray-200 p-1 rounded-full w-8 h-8"
                   />
                 </button>
                 <button onClick={() => showNextPhoto(showPhotoIndex)}>
                   <CaretRight
                     // size={60}
-                    className="hover:bg-gray-100 p-1 rounded-full w-8 h-8"
+                    className="hover:bg-gray-200 p-1 rounded-full w-8 h-8"
                   />
                 </button>
-                <span className="ml-8">{showPhoto?.title}</span>
+                <span className="ml-6">{showPhoto?.title}</span>
               </div>
-              <div>
+              <div className="w-fit">
                 <img
                   src={`${showPhoto?.file}`}
-                  className={`w-full h-fit max-h-[56rem] rounded-md object-contain border border-gray-200 shadow`}
+                  className={`w-full h-fit max-h-[36rem] 3xl:max-h-[56rem] rounded-md object-contain border border-gray-200 shadow`}
                   alt={showPhoto?.title}
                 />
               </div>
@@ -245,8 +259,14 @@ export default function PhotosLayout(): React.ReactElement {
             <div key={column.colour} className={`col-span-1`}>
               {/* Header */}
               <div className="flex mb-6 justify-center items-center text-base align-middle gap-x-2">
-                <span className={`w-5 h-5 rounded ${column.bgClass}`}></span>
-                <span className="">{capitaliseFirstLetter(column.colour)}</span>
+                <span
+                  className={`w-5 h-5 rounded shadow ${column.bgClass} ${
+                    column.colour === "white" ? "border border-gray-300" : ""
+                  }`}
+                ></span>
+                <span className="">
+                  {capitaliseFirstLetter(column.colour)}s
+                </span>
               </div>
               {/* <div>
               {

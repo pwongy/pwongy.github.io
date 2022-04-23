@@ -3,29 +3,31 @@ import { Crown, House, Wrench } from "phosphor-react";
 import TextSection from "./TextSection";
 
 const whyText = [
-  `I have an ambition to achieve self-determination`,
-  `For me, this means leaving a small dent in the universe`,
-  `I believe the way to do this is to help solve big problems (I see problems as opportunities to create value)`,
+  `I am driven by my desire to achieve self-determination`,
+  `For me, this means leaving a small dent in the universe - which is admittedly a big ambition`,
+  `I believe the way to do this is to help solve large-scale, wicked, intractable problems, because I see problems as opportunities to create value`,
   `I recognise that I have been enabled to do this by my family, particularly through the decisions and sacrifices that my parents made in their own lives`,
 ];
 const howText = [
   `Time is the most valuable resource that any of us have`,
   `Therefore, how we spend our attention is of utmost importance`,
-  `Noticing this is the first step, because only when one is aware can a real choice be made`,
+  `Noticing is the first step, because only when one is aware can a real choice be made`,
   `I have a strong preference to take control of my own life, rather than have it decided for me`,
   `To solve big problems, one needs to understand how the systems that make up our world really work`,
   `I don't need to be a world-class expert in any particular domain, just enough to be dangerous`,
-  `Of course, I can't learn everything at once, so prioritisation, skill stacking, continuous improvement and self-reflection are necessary parts of my journey`,
+  `Of course, I can't learn everything at once, so prioritisation, skill stacking, continuous improvement, and self-reflection are necessary parts of my journey`,
   `The more systems and mental models at my disposal, the more they can be combined in useful ways`,
   `To solve big problems, one also needs to be surrounded by the right people`,
-  `Avoid toxic relationships, fake people, and unnecessary drama`,
+  `Avoid toxic relationships, fake people, and unnecessary drama; no one on their deathbed wishes for more of these`,
 ];
 const whatText = [
-  `The best framework I've come across for what to do is the concept of ikigai`,
+  "The what is to be discovered, and inevitably dynamic",
+  `The best framework I've come across to guide this discovery process is the concept of ikigai`,
   `What I love: Applying technology, data, culture and economics`,
   `What I am good at: Bridging disciplines`,
   `What the world needs: More positive impact`,
   `What I can be paid for: A better way to solve big problems`,
+  "I feel confident that I am hitting all these marks through my current venture, JourneyLab",
 ];
 
 export default function Principles(): React.ReactElement {
