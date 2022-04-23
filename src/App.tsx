@@ -12,43 +12,33 @@ function App(): React.ReactElement {
       {/* This is our main navigation bar */}
       <header>
         <nav className="absolute top-0 w-full h-16 bg-gray-800 text-white flex justify-center items-center border-b border-gray-700 shadow">
-          {/* Desktop */}
-          <div className="hidden sm:flex space-x-8 text-lg">
+          <div className="flex space-x-4 md:space-x-6 text-lg">
             {/* Add links from routes.ts */}
             {mainNavRoutes.map((route) => (
               <NavLink
                 to={route.path}
                 className={({ isActive }) =>
-                  `flex ${
-                    isActive ? "font-semibold text-teal-500" : "text-gray-300"
-                  }`
+                  `${
+                    isActive ? "font-semibold text-teal-500" : ""
+                  } rounded-full md:rounded-md hover:bg-gray-700 p-2 md:px-3 md:py-2`
                 }
               >
-                {({ isActive }) => getNavIcon(route.label, isActive)}
-                <span className="ml-2 hidden sm:flex">{route.label}</span>
-              </NavLink>
-            ))}
-          </div>
-
-          {/* Mobile */}
-          <div className="flex sm:hidden space-x-8 text-lg">
-            {/* Add links from routes.ts */}
-            {mainNavRoutes.map((route) => (
-              <NavLink
-                to={route.path}
-                className={({ isActive }) =>
-                  `${isActive ? "font-semibold text-teal-500" : ""}`
-                }
-              >
-                {({ isActive }) => getNavIcon(route.label, isActive)}
+                {({ isActive }) => (
+                  <React.Fragment>
+                    <div className="flex items-center gap-x-2">
+                      {getNavIcon(route.label, isActive)}{" "}
+                      <span className={`hidden md:flex`}>{route.label}</span>
+                    </div>
+                  </React.Fragment>
+                )}
               </NavLink>
             ))}
           </div>
         </nav>
       </header>
 
-      {/* and this is where the content will go */}
-      <div className="flex flex-grow pt-16 h-full justify-center bg-gray-50">
+      {/* ...and this is where the content will go */}
+      <div className="flex flex-grow pt-16 h-full justify-center bg-gray-50 overflow-y-auto">
         <div className="h-full w-full md:w-3/4 md:max-w-7xl">
           <Outlet />
         </div>

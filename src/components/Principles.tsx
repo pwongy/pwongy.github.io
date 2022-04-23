@@ -38,12 +38,13 @@ export default function Principles(): React.ReactElement {
         <div className="flex flex-col gap-3">
           <h1 className="px-4 text-4xl text-center md:text-left">Principles</h1>
           <p className="px-4 text-xl font-light text-center md:text-left">
-            The rules I try to live by (i.e. what's important to me)
+            My fundamental values and worldview
+            {/* The rules I try to live by (i.e. what's important to me) */}
           </p>
         </div>
       </span>
 
-      <div className="flex flex-col space-y-10 w-4/5 max-w-2xl items-center">
+      <div className="flex flex-col space-y-6 px-3 sm:w-4/5 max-w-2xl items-center mb-12">
         <TextSection title={`My Why 🤔`} dotPoints={whyText} />
         <TextSection title={`My How 🧭`} dotPoints={howText} />
         <TextSection title={`My What 🌟`} dotPoints={whatText} />

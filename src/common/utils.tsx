@@ -1,4 +1,4 @@
-import { Camera, ChatsCircle, Crown, House, Signpost } from "phosphor-react";
+import { Camera, Quotes, Crown, House, Signpost } from "phosphor-react";
 
 export function getNavIcon(label: string, isActive: boolean) {
   const colourString = isActive ? "#2EC4B6" : "#9CA3AF";
@@ -11,9 +11,7 @@ export function getNavIcon(label: string, isActive: boolean) {
   const journeyIcon = (
     <Signpost color={colourString} weight="duotone" size={32} />
   );
-  const quotesIcon = (
-    <ChatsCircle color={colourString} weight="duotone" size={32} />
-  );
+  const quotesIcon = <Quotes color={colourString} weight="duotone" size={32} />;
 
   let icon = null;
 
@@ -40,4 +38,8 @@ export function getNavIcon(label: string, isActive: boolean) {
   }
 
   return icon;
+}
+
+export function capitaliseFirstLetter(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }

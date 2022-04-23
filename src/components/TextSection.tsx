@@ -11,13 +11,17 @@ export default function TextSection({
   dotPoints,
 }: Props): React.ReactElement {
   const layout = (
-    <div className="w-full">
-      <h1 className="text-2xl mb-2">{title}</h1>
-      <ul className="list-disc list-outside">
-        {dotPoints.map((item) => (
-          <li className="ml-5">{item}</li>
-        ))}
-      </ul>
+    <div className="w-full bg-white shadow rounded">
+      <div className="px-4 py-3 border-b border-gray-200">
+        <h1 className="text-xl">{title}</h1>
+      </div>
+      <div className="px-4 py-4">
+        <ul className="list-disc list-outside">
+          {dotPoints.map((item) => (
+            <li className="ml-5 mb-2">{item}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 

@@ -2,7 +2,7 @@ import Home from "../components/Home";
 import Photos from "../components/Photos";
 import Principles from "../components/Principles";
 import Journey from "../components/Journey";
-import Quotes from "../components/Quotes";
+import QuotesPage from "../components/Quotes";
 
 export const HOME = "/";
 export const PHOTOS = "/photos";
@@ -36,6 +36,6 @@ export const mainNavRoutes = [
   {
     path: QUOTES,
     label: "Quotes",
-    component: Quotes,
+    component: QuotesPage,
   },
 ];
