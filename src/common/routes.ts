@@ -1,9 +1,11 @@
 import Home from "../components/Home";
+import Photos from "../components/Photos";
 import Principles from "../components/Principles";
 import Journey from "../components/Journey";
-import Quotes from "../components/Quotes";
+import QuotesPage from "../components/Quotes";
 
-export const HOME = "/welcome";
+export const HOME = "/";
+export const PHOTOS = "/photos";
 export const PRINCIPLES = "/principles";
 export const MY_JOURNEY = "/journey";
 export const QUOTES = "/quotes";
@@ -27,8 +29,13 @@ export const mainNavRoutes = [
     component: Journey,
   },
   {
+    path: PHOTOS,
+    label: "Photos",
+    component: Photos,
+  },
+  {
     path: QUOTES,
     label: "Quotes",
-    component: Quotes,
+    component: QuotesPage,
   },
 ];
