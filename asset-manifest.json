@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.49b7530c.css",
-    "main.js": "/static/js/main.a1fcb9a7.js",
+    "main.css": "/static/css/main.79e58f20.css",
+    "main.js": "/static/js/main.79a8a3e0.js",
     "static/media/gray__cupid.jpg": "/static/media/gray__cupid.243365deceaf63fdbc5c.jpg",
     "static/media/gray__action.jpg": "/static/media/gray__action.28d092042b51f7a518aa.jpg",
     "static/media/green__aisle.jpg": "/static/media/green__aisle.892507fac8f6861da31d.jpg",
@@ -51,6 +51,7 @@
     "static/media/yellow__skylines.jpg": "/static/media/yellow__skylines.f11857fb64ef5a26cbc4.jpg",
     "static/media/gray__break.jpg": "/static/media/gray__break.a46fc84f5480b76e9cc7.jpg",
     "static/media/orange__inari.jpg": "/static/media/orange__inari.846e1771115e91e7d481.jpg",
+    "static/media/shifu.png": "/static/media/shifu.1186face5b9b52467d08.png",
     "static/media/black__artiste.jpg": "/static/media/black__artiste.2e471bf1eea0ad865a7e.jpg",
     "static/media/black__frequency.jpg": "/static/media/black__frequency.07de2fedd4ed7f632b42.jpg",
     "static/media/green__curiosity.jpg": "/static/media/green__curiosity.0114666311b0b86cfcaa.jpg",
@@ -79,16 +80,25 @@
     "static/media/paul_v1.jpg": "/static/media/paul_v1.3c0cc81e8391665f822e.jpg",
     "static/media/white__mirror.jpg": "/static/media/white__mirror.0f20208bb5bbdd1c3936.jpg",
     "static/media/paul_v2.jpg": "/static/media/paul_v2.f8869370ffd163b56a07.jpg",
+    "static/media/michael_tubbs.jpg": "/static/media/michael_tubbs.191ae5ddd3c310744a6f.jpg",
+    "static/media/cherokee.jpg": "/static/media/cherokee.fea15e6db9672767e4ca.jpg",
     "static/media/black__skylight.jpg": "/static/media/black__skylight.1b7505c711f585a6c5c3.jpg",
+    "static/media/julie_zhuo.jpg": "/static/media/julie_zhuo.cf5d537d9cfb351910ae.jpg",
+    "static/media/novak_djokovic.jpg": "/static/media/novak_djokovic.d2c495780fc28a783b56.jpg",
+    "static/media/bernard_baruch.jpg": "/static/media/bernard_baruch.14bc22df6d5473e6fd50.jpg",
+    "static/media/dalai_lama.jpg": "/static/media/dalai_lama.07ea54df74f25884a100.jpg",
     "static/media/paul_v3.jpg": "/static/media/paul_v3.59a41562daccefaf6e69.jpg",
+    "static/media/neil_strauss.jpg": "/static/media/neil_strauss.9fca8222a21b6bf3b257.jpg",
+    "static/media/thomas_oppong.jpg": "/static/media/thomas_oppong.e3d4cc6678820af74fd9.jpg",
     "static/media/paul_v4.jpg": "/static/media/paul_v4.aa600daad96bd0879c48.jpg",
     "static/media/black__eclipse.jpg": "/static/media/black__eclipse.a9996d9943311c2de64d.jpg",
+    "static/media/reddit.png": "/static/media/reddit.a77fc67e27fd9792264f.png",
     "index.html": "/index.html",
-    "main.49b7530c.css.map": "/static/css/main.49b7530c.css.map",
-    "main.a1fcb9a7.js.map": "/static/js/main.a1fcb9a7.js.map"
+    "main.79e58f20.css.map": "/static/css/main.79e58f20.css.map",
+    "main.79a8a3e0.js.map": "/static/js/main.79a8a3e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.49b7530c.css",
-    "static/js/main.a1fcb9a7.js"
+    "static/css/main.79e58f20.css",
+    "static/js/main.79a8a3e0.js"
   ]
 }
