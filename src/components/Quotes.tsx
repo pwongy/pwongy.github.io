@@ -1,17 +1,28 @@
 import React from "react";
-import {
-  ChatCenteredDots,
-  ChatDots,
-  ChatsCircle,
-  Wrench,
-  Quotes,
-} from "phosphor-react";
+import { Quotes } from "phosphor-react";
 import QuoteBlock from "./QuoteBlock";
 
-const quotesText: Array<{ quote: string; author: string; tags?: string[] }> = [
+import bernardBaruch from "../assets/images/quotes/bernard_baruch.jpg";
+import cherokee from "../assets/images/quotes/cherokee.jpg";
+import dalaiLama from "../assets/images/quotes/dalai_lama.jpg";
+import julieZhuo from "../assets/images/quotes/julie_zhuo.jpg";
+import michaelTubbs from "../assets/images/quotes/michael_tubbs.jpg";
+import neilStrauss from "../assets/images/quotes/neil_strauss.jpg";
+import novakDjokovic from "../assets/images/quotes/novak_djokovic.jpg";
+import reddit from "../assets/images/quotes/reddit.png";
+import shifu from "../assets/images/quotes/shifu.png";
+import thomasOppong from "../assets/images/quotes/thomas_oppong.jpg";
+
+const quotesText: Array<{
+  quote: string;
+  author: string;
+  photo: string;
+  tags?: string[];
+}> = [
   {
     quote: `If you only do what you can do, you will never be more than you are now.`,
     author: "Shifu (Kung Fu Panda 3)",
+    photo: shifu,
     tags: ["continuousimprovement", "growthmindset"],
   },
   {
@@ -19,46 +30,55 @@ const quotesText: Array<{ quote: string; author: string; tags?: string[] }> = [
   Live your life so that when you die, 
   the world cries and you rejoice.`,
     author: "Cherokee expression",
+    photo: cherokee,
     tags: ["life", "noregrets"],
   },
   {
     quote: `Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.`,
     author: "Bernard M. Baruch",
+    photo: bernardBaruch,
     tags: ["authenticity"],
-  },
-  {
-    quote: `Don't spend your life preparing for life.`,
-    author: "Thomas Oppong",
-    tags: ["inaction"],
-  },
-  {
-    quote: `Do crabs think fish can fly?`,
-    author: "Someone on Reddit",
-    tags: ["perspective", "thoughtprovoking"],
   },
   {
     quote: `Your career is defined by your skills and how you’ve used them, not by any external measure of your progress.`,
     author: "Julie Zhuo",
+    photo: julieZhuo,
     tags: ["expectations", "career"],
   },
   {
     quote: `Change only moves at the speed of trust.`,
     author: "Michael Tubbs",
+    photo: michaelTubbs,
     tags: ["change", "trust", "constraints"],
   },
   {
     quote: `If a problem is fixable, if a situation is such that you can do something about it, then there is no need to worry. If it’s not fixable, then there is no help in worrying. There is no benefit in worrying whatsoever.`,
     author: "Dalai Lama",
+    photo: dalaiLama,
     tags: ["worrying", "problems"],
   },
   {
     quote: `At the end of the day, it's important that your convictions are stronger than your doubts.`,
     author: "Novak Djokovic",
+    photo: novakDjokovic,
     tags: ["decisions", "conviction", "tennis"],
+  },
+  {
+    quote: `Do crabs think fish can fly?`,
+    author: "Someone on Reddit",
+    photo: reddit,
+    tags: ["perspective", "thoughtprovoking"],
+  },
+  {
+    quote: `Don't spend your life preparing for life.`,
+    author: "Thomas Oppong",
+    photo: thomasOppong,
+    tags: ["inaction"],
   },
   {
     quote: `If there was anything I'd learned, it's that the man never chooses the woman. All he can do is give her an opportunity to choose him.`,
     author: "Neil Strauss",
+    photo: neilStrauss,
     tags: ["relationships", "choice"],
   },
 ];
@@ -86,6 +106,7 @@ export default function QuotesPage(): React.ReactElement {
           <QuoteBlock
             quote={item.quote}
             author={item.author}
+            photo={item.photo}
             tags={item.tags}
           />
         ))}

@@ -3,12 +3,14 @@ import React from "react";
 type Props = {
   quote: string;
   author: string;
+  photo: string;
   tags?: string[];
 };
 
 export default function QuoteBlock({
   quote,
   author,
+  photo,
   tags,
 }: Props): React.ReactElement {
   const tagStyle =
@@ -18,8 +20,11 @@ export default function QuoteBlock({
     <div className="w-full bg-white rounded-md shadow">
       <div className="px-4 py-4 rounded-t-md">
         <h1 className="text-lg mb-4">{`"${quote}"`}</h1>
-        <span className="flex flex-row-reverse">
+        <span className="flex flex-row justify-end items-center">
           <span className="italic">— {author}</span>
+          <span>
+            <img src={photo} className="rounded-full w-10 h-10 ml-3 shadow" />
+          </span>
         </span>
       </div>
       <div className="px-4 pt-3 rounded-b-md bg-teal-50 border-t border-teal-300">
